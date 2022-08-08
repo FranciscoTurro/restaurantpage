@@ -10,7 +10,9 @@ module.exports = {
       }),
     ],
   },
-  entry: "./src/index.js",
+  entry: {
+    index: "./src/index.js",
+  },
   devtool: "inline-source-map",
   plugins: [
     new HtmlWebpackPlugin({
