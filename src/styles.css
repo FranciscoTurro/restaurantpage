@@ -1,19 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background: url(../img/worlds-fanciest-mcdonalds-mei-architects-rotterdam-10.webp);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 * {
   color: white;
 }
 
-button {
+.buttonDiv button {
   border: none;
   background: transparent;
+  cursor: pointer;
+  font-size: 1.3rem;
 }
 
 .header {
   background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.buttonDiv {
+  display: flex;
+  gap: 3rem;
+}
+
+.title {
+  margin: 1rem;
+  font-size: 6rem;
+  font-family: "Tangerine", cursive;
 }

@@ -8,10 +8,17 @@ function init() {
 function makeHeader() {
   const header = document.createElement("div");
   header.classList.add("header");
-  header.textContent = "spaghetti factory";
+  header.appendChild(makeH1());
   header.appendChild(makeButtonDiv());
 
   return header;
+}
+
+function makeH1() {
+  const title = document.createElement("h1");
+  title.textContent = "Mc'dollini";
+  title.classList.add("title");
+  return title;
 }
 
 function makeButtonDiv() {
