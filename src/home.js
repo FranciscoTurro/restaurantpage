@@ -1,21 +1,28 @@
-import Icon from "../img/test.png";
+import Icon from "../img/founder.png";
 
 function loadHomePage() {
-  appendImage();
-  appendParagraph();
+  const home = document.createElement("div");
+  home.classList.add("home");
+  home.appendChild(appendImage(Icon));
+  home.appendChild(
+    appendParagraph(
+      "Our esteemed founder, Miguel Mc'Dollini. His life mission? To serve you the most delicate pieces of italian cuisine. Oui oui."
+    )
+  );
+  return home;
 }
 
-function appendImage() {
+function appendImage(add) {
   const image = new Image();
-  image.src = Icon;
-  main.appendChild(image);
+  image.classList.add("founder");
+  image.src = add;
+  return image;
 }
 
-function appendParagraph() {
+function appendParagraph(add) {
   const text = document.createElement("p");
-  text.textContent =
-    "Lorem ipsum dolor! Exercitationem, necessitatibus deleniti!";
-  main.appendChild(text);
+  text.textContent = add;
+  return text;
 }
 
 export { loadHomePage };

@@ -26,7 +26,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  width: 100%;
+  padding-bottom: 2rem;
 }
 
 .buttonDiv {
@@ -41,12 +42,34 @@ body {
 }
 
 #main {
+  width: 700px;
+  height: 700px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.founder {
+  width: 300px;
+}
+
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-p {
-  color: black;
 }

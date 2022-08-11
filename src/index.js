@@ -33,7 +33,7 @@ function makeButtonDiv() {
   home.textContent = "Home";
   home.addEventListener("click", () => {
     main.innerHTML = "";
-    loadHomePage();
+    main.appendChild(loadHomePage());
   });
 
   const menu = document.createElement("button");
