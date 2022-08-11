@@ -1,5 +1,7 @@
 import "./styles.css";
 import { loadHomePage } from "./home";
+import { loadMenuPage } from "./menu";
+import { loadContactPage } from "./contact";
 
 function init() {
   const main = document.createElement("div");
@@ -38,11 +40,17 @@ function makeButtonDiv() {
 
   const menu = document.createElement("button");
   menu.textContent = "Menu";
-  menu.addEventListener("click", () => {});
+  menu.addEventListener("click", () => {
+    main.innerHTML = "";
+    main.appendChild(loadMenuPage());
+  });
 
   const contact = document.createElement("button");
   contact.textContent = "Contact";
-  contact.addEventListener("click", () => {});
+  contact.addEventListener("click", () => {
+    main.innerHTML = "";
+    main.appendChild(loadContactPage());
+  });
 
   buttonDiv.appendChild(home);
   buttonDiv.appendChild(menu);
