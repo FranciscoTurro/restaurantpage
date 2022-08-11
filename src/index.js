@@ -1,5 +1,4 @@
 import "./styles.css";
-const content = document.querySelector("#content");
 import { loadHomePage } from "./home";
 
 function init() {
@@ -32,7 +31,10 @@ function makeButtonDiv() {
 
   const home = document.createElement("button");
   home.textContent = "Home";
-  home.addEventListener("click", () => {});
+  home.addEventListener("click", () => {
+    main.innerHTML = "";
+    loadHomePage();
+  });
 
   const menu = document.createElement("button");
   menu.textContent = "Menu";
@@ -50,4 +52,3 @@ function makeButtonDiv() {
 }
 
 init();
-loadHomePage();
