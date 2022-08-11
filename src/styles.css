@@ -5,7 +5,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  background: url(../img/worlds-fanciest-mcdonalds-mei-architects-rotterdam-10.webp);
+  /* background: url(../img/background.jpg); */
+  background-color: black;
   background-attachment: fixed;
   background-size: cover;
 }
