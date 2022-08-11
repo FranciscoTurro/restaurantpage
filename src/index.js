@@ -60,3 +60,4 @@ function makeButtonDiv() {
 }
 
 init();
+main.appendChild(loadHomePage());
